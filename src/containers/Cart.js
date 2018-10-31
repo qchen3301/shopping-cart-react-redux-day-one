@@ -35,12 +35,12 @@ const mapStateToProps = (state, props) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        actions: bindActionCreators(CartACtions, dispatch)
+        actions: bindActionCreators(CartActions, dispatch)
     }
 }
 
 const wrapperFunction = connect(mapStateToProps, mapDispatchToProps)
 
-const wrappedComponent = wrapperFunction(cart)
+const wrappedComponent = wrapperFunction(Cart)
 
 export default wrappedComponent
